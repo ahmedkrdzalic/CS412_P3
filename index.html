@@ -3,6 +3,7 @@
 <head>
 	<title>Ahmed Krdžalić CV</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
 	<div class="parent_container">
@@ -47,7 +48,7 @@
 					<a href="https://www.facebook.com/ahmedkrdzalic00"><img src="images/icons/facebook.svg" class="icon_soc_media"></a>
 					<a href="https://www.linkedin.com/in/ahmed-krd%C5%BEali%C4%87/"><img src="images/icons/linkedin.svg" class="icon_soc_media"></a>
 					<a href="https://github.com/ahmedkrdzalic"><img src="images/icons/github.svg" class="icon_soc_media"></a>
-					<a href="" class="btn_contact_me" class="icon_soc_media" id="btn_contact_me">CONTACT ME</a>
+					<button class="btn_contact_me" class="icon_soc_media" id="btn_contact_me" onclick="popupForm()">CONTACT ME</button>
 				</div>
 			</div>
 			<div class="body_container_projects">
@@ -152,13 +153,13 @@
 	</div>
 	<div class="bg-modal">
 		<div class="modal-content">
-			<div class="close"><strong>+</strong></div>
+			<button class="btn_close_form" class="close" id="closeForm" onclick="closeForm()">+</button>
 			<h1>CONTACT ME:</h1>
 			<form action="">
-				<input type="text" placeholder="name">
-				<input type="text" placeholder="e-mail">
-				<textarea rows = "5" cols = "60" placeholder="message"></textarea><br>
-				<a href="" class="btn">Send</a>
+				<input type="text" placeholder="name" id="nameForm">
+				<input type="text" placeholder="e-mail" id="emailForm">
+				<textarea rows = "5" cols = "60" placeholder="message" id="messageForm"></textarea><br>
+				<button class="btn" id="btn_send" onclick="sendForm()">Send</button>
 			</form>
 		</div>
 	</div>
