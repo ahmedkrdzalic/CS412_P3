@@ -209,10 +209,7 @@ li {
 .icon_soc_media {
 	border-radius: 20%;
 	border: 0.15em solid #199cdc;
-	position: relative;
-	top: 5vh;
-	left: 16.5vw;
-	width: 3.1em;
+	margin-top: 1em;
 	width: 2em;
 	height: 2em;
 	padding: 0.2em;
@@ -220,7 +217,6 @@ li {
 }
 
 .icon_soc_media:hover {
-	top: 4.2vh;
 	opacity: 0.8;
 	transition: 0.4s;
 }
@@ -253,6 +249,81 @@ li {
     margin-right: auto 
 }
 
+/* popup modal */
 
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+	display: none;
+	z-index: 2;
+}
 
+.modal-content {
+	width: 50em;
+	height: 30em;
+	background-color: white;
+	border-radius: 0.5em;
+	position: relative;
+	text-align: center;
+	padding: 1em;
+
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 0.3em;
+	font-size: 3em;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+input {
+	height: 10%;
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+	padding: 1%;
+}
+
+.modal-content h1 {
+	padding: 3%;
+	color: #199cdc;
+	font-family: Verdana;
+}
+
+.btn {
+	background-color: #199cdc;
+	color: white;
+	padding: 0.4em 0.8em;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.5em;
+	border-radius: 0.2em;
+}
+
+.btn_contact_me {
+	position: relative;
+	top: -0.7em;
+	background-color: #199cdc;
+	color: white;
+	padding: 0.4em 0.6em;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.3em;
+	border-radius: 0.2em;
+}
+
+textarea {
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+	padding: 1%;
+}
